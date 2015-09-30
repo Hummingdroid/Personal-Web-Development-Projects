@@ -1,0 +1,68 @@
+/*body {background-color:#888888;}*/
+/* css for the Body, background is a royality free pretty background */
+/* used a url field to link to the website.*/
+
+body {
+  background-image: url("http://www.freelargeimages.com/wp-content/uploads/2015/04/Free_Background_Wallpaper_04.jpg")
+}
+/* Using color and in font-family I am creating a backup font incase the browser cant support the first one.  */
+/* I am also doing similar things in the rest of the <h> tags */
+
+h1 {
+  color: #000066;
+  font-family: Vivaldi, fantasy;
+}
+
+h2 {
+  color: #000066;
+  font-family: tahoma;
+}
+
+h4 {
+  font-size: small;
+  color: #CC6633
+}
+
+h5 {
+  font-family: sans-serif;
+}
+
+h6 {
+  font-family: fantasy;
+}
+
+p {
+  margin: 35px;
+  color: #000000;
+  font-family: tahoma;
+  font-size: 14px;
+}
+
+aside {
+  color: #500000;
+}
+/* Createing a solid black border and coloring the table*/
+
+table {
+  border: 2px solid black;
+  background-color: #FF99CC;
+}
+
+td {
+  border: double blue;
+}
+/*Aligning the table header to the center */
+
+th {
+  alignment-adjust: central;
+}
+/*Giving the button a solid black border. */
+
+button {
+  border: 5px solid black;
+}
+/* Making a nice border around my profile picture. */
+
+img {
+  border: 2px solid black;
+}

@@ -1,0 +1,139 @@
+<html>
+
+<head>
+  <!--The title of my tab-->
+  <title>Assignment</title>
+
+  <!-- Instead of using css I change h3 to yellow-->
+  <style>
+    h3 {
+      color: Yellow;
+    }
+  </style>
+</head>
+
+<!-- The main body of the about me section -->
+
+<body>
+
+  <!-- I use this named anchor to be able to allow users to go from the bottom-->
+  <!-- of the page to the top easily-->
+  <a name="topOfPage"></a>
+
+  <!-- link to be able to use CSS-->
+  <link rel="stylesheet" href="StylinTwo.css" type="text/css">
+
+  <!-- image of me-->
+  <!-- I resize it so it will fit -->
+  <img src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAANuAAAAJGIyYjAwNTYyLTgxYzAtNGI5Ni1hNTU1LWRjY2YzNjMxMjM2Ng.jpg" height="200px" width="200px" />
+
+  <!-- Here im usig form and legend to make a stylistic way of introducing myself -->
+  <form>
+    <fieldset>
+      <legend>
+        <h1><em>About Me</em></h1>
+      </legend>
+    </fieldset>
+
+    <!-- h2 Tag to not blow the reader out of the water like a h1 can. -->
+    <h2>A Brief Explation of Myself</h2>
+
+    <!-- h3 tag to make funny  "I thought" comment even smaller -->
+    <h3>...or a tale of a guy who learned how to embrace his inner nerd.</h3>
+
+  </form>
+  <!-- Here I am indenting the paragraph so it wont run along the side of the browser to close -->
+  <p text-indent="right:30px">
+
+    <!-- Making my nickname bold -->
+    My Name is Jason<strong> "Jay" </strong>Green.
+    <br/> My professional life started when I was 17 when I joined the United States Army
+    <br/> and Utah Army National Guard as a member of the United States Army Corp of Engineers
+    <br/> because I wanted to serve the country that had given me so much, most of
+    <br/> this stemming from being brought up in a family of Special Operations
+    <br/>members of the military. From the start I was placed into a specialized
+    <br/> Community College of the Airforce in Texas that was comprised of members
+    <br/> from all of the branches of the service including civilian instruction.
+    <br/> My course of study was in the field of vertical engineering, water purification,
+    <br/> environmental science and various other forms of engineering. I served humanitarian
+    <br/> missions in Utah, Alaska and Japan during my service which made for a great feeling
+    <br/> of accomplishment. In my personal life I never followed a path towards vertical
+    <br/> engineering as I prefered to keep my service separate from my civilian side. I
+    <br/> became a Security Force member as a contractor for the military, a science writer
+    <br/> for two local Salt Lake City magazines for two years and found interest in teaching
+    <br/> myself computer programming. After a 2 year residency in Santa Barbara California
+    <br/> working for a defense contractor at Raytheon Electronic Warfare and Vision Systems
+    <br/> I decided to move back to Utah and enroll in Salt Lake City Community College to begin
+    <br/> my true passion in my professional career in Computer Science. I know, strange considering,
+    <br/> my first career but nothing has made me happier for work than using my creativity, passion, and
+    <br/> drive to figure technical things out to make the world of the future a reality today. Technology is
+    <br/> AWESOME!
+    <br/>
+
+  </p>
+
+  <!-- In this paragraph Im using an anchor to link the user to my work site if they click the company -->
+  <!-- name in the paragraph, Im also coloring and using em to italic the name of the company.-->
+  <!-- Im also deleting  the word hoped just to show i know how to use del like the instructions ask -->
+  <p>
+    I have a very <b>strong</b> passion for programming and an aptitude for coding. "Every day is a
+    <br/> day to figure out an exciting puzzle." is my motto when it comes to programming. I look
+    <br/> forward to just about every task I have to figure out on a program and from my fellow
+    <br/> students in my classes I can tell I made the right decision. Being able to know I can
+    <br/> become one of the best in programming and the social structure of support in people that
+    <br/> share my passion makes this adventure beyond amazing. It really is all about the team,
+    <br/> the enviornment I work in and the passion that other share. I absolutely love my job at
+    <br/>
+    <a href="http://www.sorenson.com" style="color:#CCCC00"><em>Sorenson Communications</em></a> helping the deaf and hard of hearing communicate throughout the
+    <br/> 50 states and it really has added to my spiritual, career and family life more than I could
+    <br/> have ever <del>hoped</del> wished for.
+    <br/>
+
+  </p>
+
+
+  <!-- This allows the user to click here to send them back to the top of the page.-->
+  <a href="#topOfPage">Back to Top</a>
+
+  <!-- Super cool aside lets me put my copyright etc on the left side of the screen -->
+  <aside align="right">
+
+    <!-- Didnt want this too big so I chose to make it smaller -->
+    <h4>Copyright Jason Green, 2015</h4>
+
+    <!-- Address tag to show contact information -->
+    <address><h5>Hummingdroid@gmail.com</h5></address>
+  </aside>
+
+  <!-- using div tags here so I can create a small selection box of website -->
+  <!-- that the user can navigate too by clicking the names in the table. I also -->
+  <!-- colored them, created  borderes etc in the CSS file. -->
+  <div align="center">
+    <th>WEBSITES</th>
+    <table border="1" algin="center">
+      <tr padding>
+        <td><a href="http://www.google.com"><em>Google</em></a></td>
+        <td colspan="2"><a href="https://news.google.com/"><em>News</em></a></td>
+        <td colspan="2"><a href="http://www.weather.com/weather/5day/l/Salt+Lake+City+UT+USUT0225:1:US"><em>Weather</em></a></td>
+        <td colspan="2"><a href="https://mypage.slcc.edu/cp/home/displaylogin"><em>SLCC</em></a></td>
+      </tr>
+    </table>
+  </div>
+
+  <!-- Here I had fun just making a button so the user could navigate to a gps corndinate -->
+  <!-- for the school and then use google maps to look around -->
+  <!-- css attributes used in the CSS file. -->
+  <form action="https://www.google.com/maps/@40.6695636,-111.9462872,15z" align="center">
+    <button type=submit>
+      <br/>
+
+      <!-- Made this the smallest so it looked nice an centered in the button -->
+      <!-- used sub and mark to highlight the click now icon. -->
+      <h6>Explore Your World</h6>
+      <sub><mark>Click Now!</mark></sub>
+    </button>
+  </form>
+
+</body>
+
+</html>

@@ -1,0 +1,92 @@
+/* css for the Body, background is a royality free pretty background */
+/* used a url field to link to the website.*/
+
+body {
+  background-image: url("http://images4.alphacoders.com/297/297526.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+/* Using color and in font-family I am creating a backup font incase the browser cant support the first one.  */
+/* I am also doing similar things in the rest of the <h> tags */
+
+h1 {
+  color: #FFCC00;
+  font-family: Vivaldi, fantasy;
+}
+/* Giving h2 a Color Value and font. */
+
+h2 {
+  color: #CCFF00;
+  font-family: tahoma;
+}
+/*Give h4 a font size and color */
+
+h4 {
+  font-size: small;
+  color: #CC6633;
+}
+/* Giving h5 a font. */
+
+h5 {
+  font-family: fantasy;
+}
+/* Giving h6 a font */
+
+h6 {
+  font-family: sans-serif;
+}
+/* Assigning paragraph, ordered list and un-ordred list values */
+
+p,
+ol,
+ul {
+  margin: 35px;
+  color: #FFFFFF;
+  font-family: tahoma;
+  font-size: 14px;
+  font-weight: 800
+}
+/* Values for my Def Title */
+
+dt {
+  color: Red;
+  padding: 10px;
+  text-decoration: underline;
+}
+/* Values for the Def Data */
+
+dd {
+  color: White;
+  padding 10px;
+}
+
+a {
+  padding: 10px;
+}
+/* Createing a solid black border and coloring the table*/
+
+table {
+  border: 2px solid black;
+  background-color: #A0A0A0;
+}
+
+td {
+  border: double blue;
+}
+/*Aligning the table header to the center */
+
+th {
+  alignment-adjust: central;
+}
+/*Giving the button a solid black border. */
+/* I'm also curving the edges to make it look smooth. */
+
+button {
+  border: 10px dashed red;
+  border-radius: 5px;
+}
+/* Making a nice border around my profile picture. */
+
+img {
+  border: 3px solid blue;
+}
