@@ -1,71 +1,97 @@
 <html>
-    <head>
-        <link rel="stylesheet" type="text/css" href="MyTubeStyle.css">
-    </head>
-    <body>
-        <header id="headTitle">
-           <img src="http://i58.tinypic.com/2mwfl9u.png" border="0" alt="Image and video hosting by TinyPic">
-        </header>
-        <nav>
-            This is the nav
-        </nav>
-        
-        <div id="outerWrapper" > 
-            <div id="innerWrapper">
-                <div id="videoBlock">
-                  <iframe
-                     src="http://www.youtube.com/embed/z24rqrxlNPY?autoplay=0">
-                  </iframe>
-                  <article>
-                   <h5>Stuff goes here</h5>
-                  </article>
-                </div>
-            </div>
-            
-            <div id="videoListBlock">
-                 <table>
-                    <th><h4>Recommended Videos</h4></th>
-                     <tr>
-                      <td>
-                        <iframe
-                     src="http://www.youtube.com/embed/M3Myyy9_qRU?autoplay=0">
-                  </iframe>
-                      </td>
-                     </tr>
-                        <tr>
-                      <td>
-                        <iframe
-                     src="http://www.youtube.com/embed/QgPMyvZMBY0?autoplay=0">
-                  </iframe>
-                      </td>
-                     </tr>
-                           <tr>
-                      <td>
-                        <iframe
-                     src="http://www.youtube.com/embed/G8Nl_W7MHF0?autoplay=0">
-                  </iframe>
-                      </td>
-                     </tr>
-                                 <tr>
-                      <td>
-                        <iframe
-                     src="http://www.youtube.com/embed/7-wAzlqzXH0?autoplay=0">
-                  </iframe>
-                      </td>
-                     </tr>
-                                       <tr>
-                      <td>
-                        <iframe
-                     src="http://www.youtube.com/embed/WdJub3Kz2wI?autoplay=0">
-                  </iframe>
-                      </td>
-                     </tr>
-                                       
-                 </table>
-            </div>
-            
-        </div>
-          
-    
-    </body>
+<!-- Contains link to css sheet -->
+
+<head>
+  <link rel="stylesheet" type="text/css" href="MyTubeStyle.css">
+  
+  <!-- Show in-line style for h4 tags -->
+  <style>
+    h4 {
+    font-family:cursive;
+    }
+  </style>
+</head>
+
+<body>
+  <!--Header to contains fake search box and custom icon.-->
+  <header id="headTitle">
+    <img src="http://i60.tinypic.com/t8krig.png" border="0" alt="Image and video hosting by TinyPic">
+    <input type="text" style="width:300px; margin-left:400; padding:10px;" <h4>Search:</h4>
+    </input>
+  </header>
+
+  <!-- Outer wrapper div to contain inner div so I can postion blocks -->
+  <div id="outerWrapper">
+    <div id="innerWrapper">
+
+      <!--  This div is used for the Main video of the site. -->
+      <div class="videoBlock">
+        <iframe src="http://www.youtube.com/embed/z24rqrxlNPY?autoplay=0" style="height:300px; width:550px">
+        </iframe>
+      
+        <!-- Title to simulate youtubes title for each Main video -->
+        <h2>SCI-FI CGI Bros 2015 Submission Festival Winner</h2>
+
+        <!-- Using artcile to contain a comments section with input area -->
+        <article>
+          <h5>Comments:</h5>
+          <input type="text" style="width:600px; height: 200px;" <!-- Button that could be used to reply to posts and -->
+          <!-- open up a new html file or window to reply to post -->
+          <form action="http://www.google.com" method="post">
+            <button type="submit">Reply</button>
+          </form>
+        </article>
+      </div>
+    </div>
+
+    <!--  This block is to contain a table that has multiple videos to -->
+    <!--  Select from like youtubes side menu -->
+    <div id="videoListBlock">
+      <table>
+        <th>
+          <h4>Recommended Videos</h4></th>
+        <tr>
+          <td>
+            <iframe src="http://www.youtube.com/embed/M3Myyy9_qRU?autoplay=0">
+            </iframe>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <iframe src="http://www.youtube.com/embed/QgPMyvZMBY0?autoplay=0">
+            </iframe>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <iframe src="http://www.youtube.com/embed/G8Nl_W7MHF0?autoplay=0">
+            </iframe>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <iframe src="http://www.youtube.com/embed/7-wAzlqzXH0?autoplay=0">
+            </iframe>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <iframe src="http://www.youtube.com/embed/WdJub3Kz2wI?autoplay=0">
+            </iframe>
+          </td>
+        </tr>
+
+      </table>
+    </div>
+
+  </div>
+
+  <!-- Footer for Copywrite area -->
+  <footer>
+    <h6>This site is Copyright by Hummingdroids@gmail.com 2015.</h6>
+    <h5><em>Site is meant to look like Youtube.com</em></h5>
+    <a href="http://www.google.com">Back to Google </a>
+  </footer>
+</body>
+
 </html>
