@@ -1,0 +1,89 @@
+body {
+    background-image: url(http://www.theimaginativeconservative.org/wp-content/uploads/2014/12/dystopia-1.png);
+    background-repeat: no-repeat;
+}
+
+#outer {
+     border-radius: 10px;
+}
+
+
+#companyImage {
+color:red;
+background-color:black;
+
+}
+
+#companyImage img {
+    height:250px;
+    width:600px;
+}
+
+nav {
+    background-color:#FFFFCC;
+    text-align: center;
+    border-radius: 0px 0px 10px 10px;
+}
+
+
+
+/* unvisited link */
+a:link {
+color:#000000; 
+text-decoration:none;
+}
+
+/* unvisited link */
+a:visited {
+color:Red; 
+text-decoration:none;
+}
+
+/* mouse over link */
+a:hover {
+color:Blue; 
+text-decoration:none;
+} 
+
+/* mouse over link */
+a:active {
+color:Blue; 
+text-decoration:none;
+}  
+
+
+#mainContent {
+    margin-top 50px;
+    margin-right:20px;
+    margin-left:20px;
+    margin-bottom:20px;
+}
+
+#droneOne {
+    margin-top:20px;
+    float: left;
+}
+
+#droneOne img{
+     border-radius: 10px;
+}
+#aboutDrones {
+    margin-top:20px;
+    height: 400px;
+    width: 800px;
+    background-color:grey;
+    border-radius: 10px;
+    float: right;
+    font-family:monospace, sans-serif;
+}
+
+footer {
+    margin-top:500px;
+    height:50px;
+    width: auto;
+    background-color:#FF0033;
+    border-radius: 10px;
+    border: 3px solid red;
+}
+
+
