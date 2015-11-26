@@ -1,0 +1,75 @@
+header {
+  height: 220px;
+  width: 100%;
+  border: 3px solid #E0E0E0;
+  background: linear-gradient(#707070  , #D0D0D0  );
+  border-radius: 10px 10px 10px;
+  box-shadow: 5px 5px 10px;
+}
+
+/* Setting up my nav bar. */
+/* Also making a cool shadow under it */
+nav {
+  background-color: #FFFFCC;
+  text-align: center;
+  border-radius: 0px 0px 10px 10px;
+  box-shadow: 5px 10px 5px Black;
+}
+/* unvisited link */
+/*psuedoclass */
+
+a:link {
+  color: #000000;
+  text-decoration: none;
+  outline-style: hidden;
+}
+/* unvisited link */
+/*psuedoclass */
+
+a:visited {
+  color: Red;
+  text-decoration: none;
+}
+/* mouse over link */
+/*psuedoclass */
+
+a:hover {
+  color: Blue;
+  text-decoration: none;
+}
+
+#siteHeader h1 {
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
+  margin-top: 50px;
+  font-size: 300%;
+  font-family: cursive, sans-serif;
+  text-align: left;
+  padding: 10px;
+}
+
+table, tr,td {
+  border: 2px solid black;
+}
+
+#squares {
+  margin-left: 250px;
+  margin-top: 50px;
+}
+
+button {
+  height: 80px;
+  width: 100px;
+  border-radius: 10px 10px 10px 10px;
+  background-color: yellow;
+  margin-left: 610px;
+  margin-top: 25px;
+}
+
+body {
+  background-color:#E0E0E0 ;
+}
+
+#saying {
+margin-left:100px;
+}
