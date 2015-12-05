@@ -1,0 +1,118 @@
+/* Set the background image */
+
+body {
+  background-image: url(http://www.theimaginativeconservative.org/wp-content/uploads/2014/12/dystopia-1.png);
+  background-repeat: no-repeat;
+  background-size:100% 100%;
+}
+/* Set outers top-right border to curved */
+
+#outer {
+  border-radius: 10px;
+}
+/* Set company image background */
+
+#companyImage {
+  background-color: black;
+}
+/* Set company image and round its corners */
+
+#companyImage img {
+  height: 250px;
+  width: auto;
+  border-radius: 0px 10px 0px 0px
+}
+/* Setting up my nav bar. */
+/* Also making a cool shadow under it */
+nav {
+  background-color: #FFFFCC;
+  text-align: center;
+  border-radius: 0px 0px 10px 10px;
+  box-shadow: 5px 10px 5px Black;
+}
+/* unvisited link */
+/*psuedoclass */
+
+a:link {
+  color: #000000;
+  text-decoration: none;
+  outline-style: hidden;
+}
+/* unvisited link */
+/*psuedoclass */
+
+a:visited {
+  color: Red;
+  text-decoration: none;
+}
+/* mouse over link */
+/*psuedoclass */
+
+a:hover {
+  color: Blue;
+  text-decoration: none;
+}
+/* mouse over link */
+/*psuedoclass */
+
+a:active {
+  color: Blue;
+  text-decoration: none;
+}
+/* Positioning Div */
+
+#mainContent {
+  margin-top 50px;
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+/* Positioning div */
+/* Using shadow again to make the image product pop! */
+#droneOne {
+  margin-top: 20px;
+  box-shadow: 8px 10px 10px Black;
+  float: left;
+}
+
+/* Make the shadow on the Drone image change color to Glow effect */
+#droneOne img:hover {
+  box-shadow: 8px 10px 10px Red;
+  }
+/* Keep img positioned statically regarless of resizing of browsers */
+
+#droneOne img {
+  border-radius: 10px;
+  position: static;
+}
+
+.aboutDrones {
+  margin-top: 20px;
+  height: 600px;
+  width: 800px;
+  background-color: grey;
+  border-radius: 10px;
+  float: right;
+  border: 3px solid #686868;
+  padding: 10px 10px 10px 10px;
+}
+/* Set all h tag attributes in aboutDrones class */
+
+h1,
+h3,
+h4,
+h5,
+p.aboutDrones {
+  font-family: sans-serif, monospace;
+  color: white;
+}
+/* Set footer to round corners and color it and give it a colored border */
+
+footer {
+  margin-top: 650px;
+  height: 50px;
+  width: auto;
+  background-color: #FF0033;
+  border-radius: 10px;
+  border: 3px solid red;
+}

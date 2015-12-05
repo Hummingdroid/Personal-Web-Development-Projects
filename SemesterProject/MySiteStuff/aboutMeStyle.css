@@ -1,0 +1,68 @@
+/*body {background-color:#888888;}*/
+/* css for the Body, background is a royality free pretty background */
+/* used a url field to link to the website.*/
+
+body {
+  background-image: url("https://a8b9696a91de10cc2c20196ef7b687396774edd5.googledrive.com/host/0B0RTlVpNFM-GfkRsWVdJOXJaZkJIQXV5OXRhcDZEVFBfb0ZMak9TOWJhNnFEZ1ZYZ0Y0blU/textured-wallpaper-image-jTqy.jpg")
+}
+/* Using color and in font-family I am creating a backup font incase the browser cant support the first one.  */
+/* I am also doing similar things in the rest of the <h> tags */
+
+h1 {
+  color: white;
+  font-family: Vivaldi, fantasy;
+}
+
+h2 {
+  color: white;
+  font-family: tahoma;
+}
+
+h4 {
+  font-size: small;
+  color: #CC6633
+}
+
+h5 {
+  font-family: sans-serif;
+}
+
+h6 {
+  font-family: fantasy;
+}
+
+p {
+  margin: 35px;
+  color: white;
+  font-family: tahoma;
+  font-size: 14px;
+}
+
+aside {
+  color: red;
+}
+/* Createing a solid black border and coloring the table*/
+
+table {
+  border: 2px solid black;
+  background-color: #FF99CC;
+}
+
+td {
+  border: double blue;
+}
+/*Aligning the table header to the center */
+
+th {
+  alignment-adjust: central;
+}
+/*Giving the button a solid black border. */
+
+button {
+  border: 5px solid black;
+}
+/* Making a nice border around my profile picture. */
+
+img {
+  border: 2px solid black;
+}

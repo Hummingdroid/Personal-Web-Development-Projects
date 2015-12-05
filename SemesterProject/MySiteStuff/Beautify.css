@@ -1,0 +1,95 @@
+/* Assures correct display in old browsers */
+header, section, footer, aside, nav, main, article, figure {
+    display: block; 
+}
+
+body {
+  background-image: url("http://www.ehdwalls.com/plog-content/images/1920x1200/cities/2174400378ca190627eovl1.jpg")
+}
+
+header {
+  position: relative;
+  padding-left: 20px;
+  padding-top: 10px;
+  background-color: #E00000;
+  text-align: center;
+  font-family: cursive;
+  font-size: 50;
+}
+
+header h1 {
+  color: white;
+  padding-bottom: 1px;
+  padding-top: 1px;
+  height: 40px;
+}
+
+div.wrapper {
+  width: 100%;
+  margin-bottom: 2%;
+}
+
+/* Set interior dive attributes
+*  which set the div boundaries
+*/
+div.content {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #FFFFFF;
+}
+
+/* Set html and body margins to 0
+*  to fill whole area 
+*/
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+footer {
+  background-color: black;
+  padding: 10px;
+}
+
+footer h5 {
+  color: white;
+  text-align: center;
+}
+
+section,
+article {
+  padding: 10px;
+}
+
+nav {
+  text-align: center;
+  font-family: cursive;
+  font-size: 20;
+}
+
+/* Make background change on hover */
+nav:hover {
+  background-color: #989898;
+}
+
+aside {
+  padding: 30px;
+  position: right;
+  color: #blue;
+  background-color: #282828;
+  height: auto;
+}
+
+/* ID that sets fields */
+#ufos {
+  height: 80px;
+  width: 80px;
+  border: solid black;
+}
+/* ID that sets fields */
+#articleone h4 {
+  color: #101010;
+  width: 500px;
+}

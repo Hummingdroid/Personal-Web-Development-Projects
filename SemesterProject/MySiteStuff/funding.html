@@ -1,0 +1,97 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+
+<head>
+  <title>Funding</title>
+  <link rel="stylesheet" type="text/css" href="mySiteStyles.css" />
+  <script type="text/javascript" src=""></script>
+</head>
+
+<body id="fundingBackground">
+  <div id="main">
+    <div id="header">
+      <div id="companyBanner">
+        <div id="companyLogo">
+          <font size="6" style="text-align:center; font-family:Tahoma">Funding</font>
+
+        </div>
+        <!--close welcome-->
+        <div id="actionbar">
+          <ul id="actionItem">
+            <li><a href="showCaseSite.html" style="color:red">Home</a></li>
+            <li><a href="aboutUs.html" style="color:red">About Us</a></li>
+            <li><a href="projectExamples.html" style="color:red">Projects</a></li>
+          </ul>
+        </div>
+        <!-- Close the CompanyLogo-->
+      </div>
+      <!--Close thte companyBanner-->
+    </div>
+    <!--Close the Header -->
+
+    <div id="site_content">
+
+      <div class="centerTopLogoPicture">
+        <ul class="centerTopLogoPicture">
+          <li class="show">
+            <img width="750" height="350" margin-left="300px" src="fundingImage.jpg" alt="Picture of Wearable Technology" />
+          </li>
+        </ul>
+      </div>
+
+      <div>
+        <!-- Header for user input area -->
+        <h1 style="font-family: Tahoma">Customer Information</h1>
+        <h6>(Forms Auto-Fill)</h6>
+
+        <!-- Form that auto populates with saved form info if you have it stored on your browser -->
+        <form>
+          <h2 id="fundIt" style="font-family: Tahoma; color:yellow"> First Name</h2>
+          <input type="first-name" name="firstname" placeholder="First Name">
+
+          <h2 id="fundIt" style="font-family: Tahoma; color:yellow">Last Name</h2>
+          <input type="text" name="lastname" placeholder="Last Name">
+
+          <h2 id="fundIt" style="font-family: Tahoma; color:yellow">Street</h2>
+          <input type="street" name="street" placeholder="Street">
+
+          <h2 id="fundIt" style="font-family: Tahoma; color:yellow">City</h2>
+          <input type="city" name="city" placeholder="City">
+
+          <h2 id="fundIt" style="font-family: Tahoma; color:yellow">State</h2>
+          <input type="state" name="state" placeholder="State...ie; NY">
+
+          <h2 id="fundIt" style="font-family: Tahoma; color:yellow">Zipcode</h2>
+          <input type="zipcode" name="zipcode" placeholder="Your Zipcode">
+
+          <h2 id="fundIt" style="font-family: Tahoma; color:yellow">Email</h2>
+          <input type="email" name="email" placeholder="your email@something.com">
+
+          <h2 id="fundIt" style="font-family: Tahoma; color:yellow">Email</h2>
+          <input name="projectChoice" placeholder="Cicret Bracelet">
+
+          <h2 id="fundIt" style="font-family: Tahoma; color:yellow">Amount to Fund:</h2>
+          <input value="0.00" name="amount">
+
+          <input type="button" onclick="location.href='receipt.html';" value="Submit" />
+        </form>
+
+      </div>
+
+      <div id="fundItagreements">
+        <form>
+          <input type="checkbox" name="agreement">
+          <h2>I have read the "how funding works document and agree."</h2>
+          <br>
+          <input type="checkbox" name="emailConfirmation">
+          <h2>Send me email updates on the progress of the project I funded.</h2>
+        </form>
+
+      </div>
+
+    </div>
+    <!--close site_content-->
+
+</body>
+
+</html>

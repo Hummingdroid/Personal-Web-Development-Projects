@@ -1,0 +1,118 @@
+<html lang="en">
+
+<link href="Beautify.css" rel="stylesheet" type="text/css">
+
+<!-- Keeping Head element out as per specificaitons -->
+
+<!-- Make a Tab title -->
+<title>Fake News Network</title>
+
+<body>
+
+  <!-- Header element that contains an image for the website and weather widget -->
+  <header>
+    <img src="fakeNewsCorp.jpg" height="125" width="250"alt="Fake News Network Logo"/>
+
+    <span style="position: absolute; right: 100px; top: 50%; -webkit-transform: translateY(-50%);">
+        <img src="http://weathersticker.wunderground.com/weathersticker/cgi-bin/banner/ban/wxBanner?bannertype=wu_simplewhite&airportcode=KSLC&ForcedCity=Salt%20Lake%20City&ForcedState=UT&zip=84101&language=EN"
+        style="border: solid black 2px" width="160" alt="Find more about Weather in Salt Lake City, UT"/></span>
+
+    <h5>World Fake News Network</h5>
+  </header>
+
+  <!-- Using nested Divs here so I can create a container inside of the body that can display a white background -->
+  <!-- like on CNN's webstie -->
+  <!-- Im using class declarations in CSS to link the formatting to this area -->
+  <div class="wrapper">
+    <div class="content">
+
+      <!-- Nav links to other sites that you would see on a news site -->
+      <nav>
+        <a href="http://www.mayoclinic.org/" target="_blank">Health</a>
+        <a href="http://www.nasa.gov" target="_blank">Science</a>
+        <a href="https://news.google.com/news/section?cf=all&pz=1&geo=detect_metro_area&siidp=1d6db387673150206e86f7f3ce05d1395c2d&ict=ln">Local</a>
+        <a href="https://news.google.com/" target="_blank">World</a>
+        <a href="http://www.doityourself.com" target="_blank">Do-It-Yourself</a>
+      </nav>
+
+      <!-- Section here contains the a image for the autor which is an alien and figure -->
+      <!-- that has a caption figure element -->
+      <section>
+        <figure>
+          <img id="ufos" src="http://static.comicvine.com/uploads/original/10/101435/2133787-alf_digital_painting_by_ezekdesigns.png">
+          <figcaption>"Truth is Out There"</figcaption>
+        </figure>
+
+        <h1>UFOS: What happens when foil isn't enough?</h1>
+
+        <h5><u><em>U.S. Military's D.A.R.P.A 's new countermeasure:
+                "Gluten-Free Tortilla Wraps that scatter mind control
+          waves"</em></u></h5>
+      </section>
+
+      <!-- Main element contains main information for the page -->
+      <!-- as per documentation I made sure not to nest it into headers, footers, asides, etc.. -->
+      <main>
+
+        <!-- Article tag contains my article information -->
+        <!-- I also like it to an id in the CSS file for formatting. -->
+        <!-- Inclued a mark element to hightlight a company name -->
+        <article id="articleone">
+          <h4>&nbsp;&nbsp; In case you didn't already know, Tin foil hats protect you from the deadly mind
+                control rays of the recticlian aliens from "Alpha Centari". Are you
+                thinking of joining the fight against Zorn and the Codan
+                Armada? Well, you may just want to put down the tin foil and
+                join the fight with the best protection this side of the
+           <mark> "Malto-Meal" </mark> factory. DARPA, The US Militarys right arm for
+                research, The Defense Advanced Research Project Agency has been
+                working overtime over this last year to come up with a solution
+                to the problems tin foil represents to people. First its
+                expensive in large quantites as it has to be mined. So what is
+                the alternative that our geniuses behind closed doors, wearing
+                white lab coats have "baked" so to speak? <span style=
+                "text-decoration: underline">Gluten-Free Tortilla
+                Wraps.</span><br>
+                <br>
+                With these specialized wraps that you can make yourself from
+                the common Grocery Store purchase, NOTHING and I mean NOTHING
+                will protect you better than these Torilla wrapped tin foil hats. A Spokes person
+                for Mission Tortillas, based out of Suan Nuevo, Mexico says this,
+                "When the ships come out of the sky and try to pull their
+                sneaky tricks you can simply put one of our fresh tortillas on
+                your head, wrap it in foil and make a run for it. Strangley enough when asked
+                about the increase and prices and sales of his famous
+                "Envolturas mente extranjeros" translated "Alien Mind Wraps"
+                Roberto Barrera had no comment. Feeling like you need the extra
+                protection? <a href=
+                "http://www.walmart.com/browse/food/tortillas-pitas-wraps/976759_976779_1001458">
+                Click here</a></h4>
+
+          <!-- Youtube Video embeded using iframe -->
+ <iframe width="420" height="315"
+src="http://www.youtube.com/embed/dA-i2Pjvfps?autoplay=0">
+</iframe>
+        </article>
+      </main>
+    </div>
+  </div>
+
+
+  <!-- Another div to encapsulate a summary and details tag for drop down info -->
+  <div class="secondwrapper">
+    <aside>
+      <details>
+        <summary>
+          <h4>Article By: Agent Mulder</h4></summary>
+        <p>
+          <h6>Published: Thursday 26th September<time>&nbsp;22:00 EST</time></h6></p>
+      </details>
+    </aside>
+  </div>
+<a href="MyTube.html"> Next Page >></a>
+  <!-- Footer Tag that displays information, like disclaimers in this case -->
+  <footer>
+    <h5>All events in article are purely fake and any relation to real or actual events are cirucumstantial</h5>
+  </footer>
+</body>
+
+</html>

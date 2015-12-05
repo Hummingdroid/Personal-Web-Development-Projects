@@ -1,0 +1,209 @@
+<html>
+
+   <head>
+     <link rel="stylesheet" type="text/css" href="JavaStyling.css" />
+   </head>
+
+    <body>
+
+      <!-- Header for Website -->
+ <header id="siteHeader">
+   <h1>Cat Lovers Paradise<br/>&nbsp;&nbsp;&nbsp;&nbsp; <em>We know they're irresistable</em></h1>
+
+   <!-- gif of a walking cat to add to the goofiness -->
+   <img style="position:absolute; left: 990px; top: 0px;" src='http://www.anniemation.com/clip_art/images/cat-walk.gif'>
+ </header>
+ <nav>
+     <a href="http://www.petco.com/Cat-Home.aspx" target="_blank">Cat Supplies</a>
+     <a href="https://catladybox.com/" target="_blank">Cat Ladies</a>
+     <a href="https://www.youtube.com/watch?v=SbyZDq76T74" target="_blank">Cat Music</a>
+   </nav>
+
+<!-- Table will display different cats in random orders with funny saying -->
+      <table id="squares">
+
+        <tr>
+          <td>
+            <img id="myImage1"  src="https://upload.wikimedia.org/wikipedia/commons/4/44/Question_mark_(black_on_white).png" width="200" height="200">
+          <td>
+            <img id="myImage2"  src="https://upload.wikimedia.org/wikipedia/commons/4/44/Question_mark_(black_on_white).png" width="200" height="200">
+          </td>
+          <td>
+            <img id="myImage3" src="https://upload.wikimedia.org/wikipedia/commons/4/44/Question_mark_(black_on_white).png" width="200" height="200">
+          </td>
+          <td>
+            <img id="myImage4"  src="https://upload.wikimedia.org/wikipedia/commons/4/44/Question_mark_(black_on_white).png" width="200" height="200">
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <img id="myImage5"  src="https://upload.wikimedia.org/wikipedia/commons/4/44/Question_mark_(black_on_white).png" width="200" height="200">
+          <td>
+            <img id="myImage6" src="https://upload.wikimedia.org/wikipedia/commons/4/44/Question_mark_(black_on_white).png" width="200" height="200">
+          </td>
+          <td>
+            <img id="myImage7"  src="https://upload.wikimedia.org/wikipedia/commons/4/44/Question_mark_(black_on_white).png" width="200" height="200">
+          </td>
+          <td>
+            <img id="myImage8"  src="https://upload.wikimedia.org/wikipedia/commons/4/44/Question_mark_(black_on_white).png" width="200" height="200">
+        </tr>
+
+        <tr height="50px">
+          <td colspan="4">
+             <p id="saying"><b><h1 id="speak"></h1></b></p>
+          </td
+          ></tr>
+
+      </table>
+
+      <!-- Button to play game -->
+      <button onclick="changeImage()">Mystery Cat Button</button>
+
+      <!--Hidden music -->
+      <iframe width="1" height="1"
+        src="http://www.youtube.com/embed/LTunhRVyREU?autoplay=1">
+</iframe>
+
+
+      <script>
+        // Set up images to assign based on certain conditions with the randomizer.
+        var defaultImage = "https://upload.wikimedia.org/wikipedia/commons/4/44/Question_mark_(black_on_white).png";
+        var firstImage = "http://orig13.deviantart.net/5a5c/f/2013/084/0/b/0b468bb23e287b5cb6c10427b5acc06f-d5z782y.jpg";
+        var secondImage = "http://vignette2.wikia.nocookie.net/thehungergames/images/4/48/Happy_cat.jpg/revision/latest?cb=20121008044759";
+        var thirdImage = "http://rs95.pbsrc.com/albums/l121/momacie/laughingcat.gif~c200";
+        var fourthImage = "http://img.ccrd.clearchannel.com/media/mlib/2135/2014/10/default/jedi_cat_0_1414580372.jpg";
+        var fifthImage = "http://abillionlaughs.com/pics/7/Star-Trek-Grumpy-Cat.jpg";
+        var sixthImage ="http://www.eatliver.com/wp-content/uploads/2014/06/stupid-cat3.jpg";
+        var seventhImage = "http://cdn.buzzlie.com/wp-content/uploads/2014/07/5824578555_d239d42195_z1.jpg";
+        var eighthImage = "http://40.media.tumblr.com/10f2f212e1d17112fb938f808a740f93/tumblr_n187taI5m81shf8zxo5_400.jpg";
+
+        // Variables for random number picker and starting iterator over again.
+        var image;
+        var randomNumber = 0;
+        var nextSquare = 1;
+
+        var oneCount = 0;
+        var twoCount = 0;
+        var threeCount = 0;
+        var fourCount = 0;
+        var fiveCount = 0;
+        var sixCount = 0;
+        var sevenCount = 0;
+        var eightCount = 0;
+
+        // String objects get assigned to images based up image id in
+        // the switch statment below.
+        var speak1 = "Don't worry be happy";
+        var speak2 = "Happy Cat knows how to melt hearts";
+        var speak3 = "HAHAHAHHAHAH!!!!";
+        var speak4 = "You are not a Jedi Yet!!";
+        var speak5 = "Most illogical!";
+        var speak6 = "Love me please???";
+        var speak7 = "Are you ready to ROCK!!!!!!";
+        var speak8 = "come to the dark side...";
+
+          //  function to Change the image when button is clicked.
+          function changeImage() {
+            // Make a random number from 1 -8, using a function call
+            // and passing arguments.
+            randomNumber = getRandomIntInclusive(0,9);
+
+            //*  If statement. This part  will reset the pointer location
+            // to number 1 so it will go around and around.
+            // Images are reset also.
+            if(nextSquare > 8 ){
+                nextSquare = 1;
+                resetImages();
+            }
+
+            // Concatinate Name with Random number to choose which images changes.
+            image = document.getElementById('myImage'+ nextSquare);
+
+            // Switch statement to select which image will go in what table box.
+            // Breaks will exit when case is met to prevent fall through.
+            switch(randomNumber){
+              case 1:
+              image.src = firstImage;
+              document.getElementById("speak").innerHTML = speak1;
+              oneCount++;
+              break;
+
+              case 2:
+              image.src = secondImage;
+              document.getElementById("speak").innerHTML = speak2;
+              twoCount++;
+              break;
+
+              case 3:
+              image.src = thirdImage;
+              document.getElementById("speak").innerHTML = speak3;
+              threeCount++;
+              break;
+
+              case 4:
+              image.src = fourthImage;
+              document.getElementById("speak").innerHTML = speak4;
+              fourCount++;
+              break;
+
+              case 5:
+              image.src = fifthImage;
+              document.getElementById("speak").innerHTML = speak5;
+              fiveCount++;
+              break;
+
+              case 6:
+              image.src = sixthImage;
+              document.getElementById("speak").innerHTML = speak6;
+              sixCount++;
+              break;
+
+              case 7:
+              image.src = seventhImage;
+              document.getElementById("speak").innerHTML = speak7;
+              sevenCount++;
+              break;
+
+              case 8:
+              image.src = eighthImage;
+              document.getElementById("speak").innerHTML = speak8;
+              eightCount++;
+              break;
+
+              default:
+              image.src = fifthImage;
+              document.getElementById("speak").innerHTML = speak5;
+              break;
+            }
+
+
+
+             // Increment tile location for next iteration.
+             nextSquare++;
+           }
+
+
+          // Returns a random integer between min (included) and max (included)
+          // Using Math.round() will give you a non-uniform distribution!
+          function getRandomIntInclusive(min, max) {
+          return Math.floor(Math.random() * (max - min )) + min;
+          }
+
+          // Method to reset images.
+          function resetImages(){
+
+            // For loop iterates the number of position and assigns a default
+            // image to each square.
+            for (var x = 1; x <= 8; x++){
+              image = document.getElementById('myImage'+ x);
+              image.src = defaultImage;
+            }
+           }
+
+
+  </script>
+
+    </body>
+
+</html>

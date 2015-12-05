@@ -1,0 +1,372 @@
+html {
+  height: 100%;
+}
+body {
+  font: normal 70% sans-serif;
+  color: #FFF;
+  max-width: 720px;
+  background: transparent url(IndexBackground.jpeg) repeat;
+}
+ul img {
+  border-radius: 30px 30px 30px 30px;
+  margin-right: 20px;
+}
+p {
+  padding: 0 0 10px 0;
+  font-size: 100%;
+}
+img {
+  border: 0;
+}
+h1, h2, h3, h4, h5, h6 {
+  font: normal 175% sans-serif;
+  color: #FFFFFF;
+  letter-spacing: -1px;
+  text-shadow: 0px -1px 0px #000000;
+  margin: 0 0 10px 0;
+}
+h2 {
+  font: normal 140% sans-serif;
+}
+h3 {
+  font: bold 130% sans-serif;
+  text-shadow: 2px 2px white;
+  color: #FFFFFF;
+}
+h4, h5, h6 {
+  margin: 0;
+  padding: 0 0 0px 0;
+  font: normal 150% sans-serif;
+  color: #FFFFFF;
+  line-height: 1.5em;
+}
+h5, h6 {
+  font: sans-serif;
+  color: #FFFFCC;
+  padding-bottom: 15px;
+}
+a:hover {
+  text-decoration: underline;
+  color: blue;
+}
+ul {
+  margin: 2px 0 22px 30px;
+  line-height: 1.7em;
+  font-style: normal;
+  font-size: 100%;
+}
+ol {
+  margin: 8px 0 22px 20px;
+}
+ol li {
+  margin: 0 0 11px 0;
+}
+ul#actionItem {
+  margin: 0;
+}
+ul#actionItem li {
+  padding: 0 0 0 0px;
+  list-style: none;
+  margin: 2px 0 0 0;
+  display: inline;
+  background: transparent;
+}
+ul#actionItem li a {
+  float: left;
+  font: bold 120% sans-serif;
+  height: 24px;
+  margin: 10px 20px 0 20px;
+  text-shadow: 0px -1px 0px #000;
+  padding: 6px 10px 0 10px;
+  background: transparent;
+  border-radius: 7px 7px 7px 7px;
+  -moz-border-radius: 7px 7px 7px 7px;
+  -webkit-border: 7px 7px 7px 7px;
+  text-align: center;
+  color: #FFF;
+  text-decoration: none;
+}
+ul#actionItem li:hover a {
+  color: blue;
+  text-shadow: none;
+}
+.content_item {
+  width: 900px;
+  margin-bottom: 10px;
+}
+.indexContainer {
+  float: left;
+  width: 350px;
+  border: 20px;
+  clear: both;
+}
+.sidebar_container {
+  float: right;
+  margin: 20px 0 0 10px;
+  width: 240px;
+}
+.sidebar {
+  float: left;
+  width: 240px;
+  margin-bottom: 10px;
+}
+.sidebar_item {
+  font: normal 100% Arial, Helvetica, sans-serif;
+  width: 240px;
+}
+.sidebar h2 {
+  padding: 5px 0 0 0;
+  font: normal 140% 'News Cycle', Arial, sans-serif;
+  height: 30px;
+}
+.showCaseButtonsContainer {
+  float: left;
+  width: 940px;
+  clear: both;
+}
+.insideChooser {
+  width: 242px;
+  float: left;
+  padding: 20px;
+  background: #FEFFCF;
+  color: #000;
+  margin: 20px;
+  clear: both;
+  border-radius: 7px 7px 7px 7px;
+  -moz-border-radius: 7px 7px 7px 7px;
+  -webkit-border: 7px 7px 7px 7px;
+}
+.insideChooser h3 {
+  color: #000;
+  text-shadow: 1px 1px #FEFFCF;
+}
+.insideChooserShowCase {
+  width: 242px;
+  padding: 20px;
+  background: #FEFFCF;
+  color: #000;
+  margin: 10px;
+  display: inline-block;
+  border-radius: 7px 7px 7px 7px;
+  -moz-border-radius: 7px 7px 7px 7px;
+  -webkit-border: 7px 7px 7px 7px;
+}
+.insideChooserShowCase h3 {
+  color: Black;
+  text-shadow: 1px 1px #FEFFCF;
+}
+.content_container {
+  width: 440px;
+  margin-right: 10px;
+  float: left;
+}
+.centerTopLogoPicture {
+  width: 900px;
+  height: 350px;
+  float: left;
+  margin-bottom: 40px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+.sidebar_container {
+  float: right;
+  margin: 20px 0 0 10px;
+  width: 240px;
+}
+.sidebar {
+  float: left;
+  width: 240px;
+  margin-bottom: 10px;
+}
+.sidebar_item {
+  font: normal 100% Arial, Helvetica, sans-serif;
+  width: 240px;
+}
+.sidebar h2 {
+  padding: 5px 0 0 0;
+  font: normal 140% 'News Cycle', Arial, sans-serif;
+  height: 30px;
+}
+.form_settings {
+  margin: 15px 0 0 0;
+}
+.form_settings p {
+  padding: 0 0 4px 0;
+}
+.form_settings span {
+  float: left;
+  width: 280px;
+  text-align: left;
+  text-shadow: none;
+  color: #000;
+}
+.form_settings input, .form_settings textarea {
+  padding: 2px;
+  width: 299px;
+  font: 100% arial;
+  border: 1px solid #E5E5DB;
+  background: #FFF;
+  color: #47433F;
+}
+.form_settings input[type="checkbox"] {
+  padding: 2px 0;
+  width: 15px;
+  font: 100% arial;
+  border: 0;
+  background: #FFF;
+  color: #47433F;
+  margin: 28px 0;
+}
+ul.centerTopLogoPicture {
+  width: 100%;
+  height: 350px;
+  overflow: hidden;
+  position: relative;
+  border-radius: 10px;
+  margin: 10px 10px 10px 10px;
+}
+ul.centerTopLogoPicture li {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  left: 0;
+  right: 0;
+}
+#main, #showCaseHeader #showCaseButtonsContainer, #companyBanner, #actionBar, #site_content, #index_site_content #footer, #showCaseFooter {
+  margin-left: auto;
+  margin-right: auto;
+}
+#main {
+  background: transparent;
+}
+#indexHeader, #showCaseHeader {
+  height: 100px;
+}
+#indexPageLogo p {
+  text-align: center;
+  color: black;
+  text-shadow: 2px 2px #FFCC66;
+}
+#companyBanner {
+  width: 940px;
+  position: relative;
+  height: 50px;
+  padding: 15px 0 0 0;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 10px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 10px;
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 10px;
+}
+#companyLogo {
+  width: 355px;
+  float: left;
+  height: 50px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-top: 5px;
+  background: transparent;
+}
+#welcome H1 {
+  font: normal 350% Comic;
+  letter-spacing: -3px;
+  text-shadow: 5px 5px #000000;
+  color: #FEFFCF;
+}
+#menu_container {
+  height: 50px;
+}
+#actionBar {
+  width: 560px;
+  height: 70px;
+  float: left;
+  margin: 0 auto;
+}
+#fundIt {
+  background-color: #000;
+  border: 1px solid black;
+  opacity: 0.6;
+  margin-top: 10px;
+  width: 100px;
+}
+#fundItagreements {
+  border: 2px solid yellow;
+  opacity: 0.9;
+  margin-top: 10px;
+  margin-left: 400px;
+  width: 300px;
+}
+#fundItagreements h2 {
+  color: yellow;
+}
+#fundingBackground {
+  font: normal 70% sans-serif;
+  color: #FFF;
+  max-width: 980px;
+  background: transparent url(fundingBackground.jpg);
+  background-size: cover;
+}
+#main {
+  width: 920px;
+  overflow: hidden;
+  padding-left: 20px;
+  padding-bottom: 20px;
+  background: transparent;
+}
+#indexBackground {
+  font: normal 70% sans-serif;
+  color: #FFF;
+  max-width: 980px;
+  background: transparent url(oldComputer.jpg);
+  background-size: cover;
+}
+#content {
+  width: 900px;
+  float: left;
+}
+#companyLogo h1 {
+  color: yellow;
+  text-shadow: 2px 0px orange;
+  padding: 10px;
+}
+#showCaseFooter {
+  height: 60px;
+  margin-top: 30px;
+  margin-right: 30px;
+  background: #382922;
+  border-radius: 20px 20px 20px 20px;
+  background: -moz-linear-gradient(#554137, #382922);
+  background: -o-linear-gradient(#554137, #382922);
+  background: -webkit-linear-gradient(black, grey);
+  clear: both;
+}
+#showCaseFooter h1 {
+  padding-bottom: 20px;
+  margin-bottom: 10px;
+}
+
+/* ID that sets fields */
+
+#article {}
+#articleone h4 {
+  color: orange;
+  width: 500px;
+  text-shadow: 0px 1px white;
+}
+#footer {
+  width: 940px;
+  height: 20px;
+  font-weight: bold;
+  padding-top: 20px;
+  text-align: center;
+  background: transparent;
+  text-shadow: 1px 1px #000;
+  color: #FFF;
+}
+#footer a, #footer a:hover {
+  text-shadow: 1px 1px #000;
+  color: #FFF;
+  text-decoration: underline;
+  padding-bottom: 20px;
+}
+#footer a:hover {
+  text-decoration: none;
+}
