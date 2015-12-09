@@ -3,25 +3,73 @@
 
 <head>
   <title>Wearable-Now</title>
+
+  <!-- Link to site CSS sheet -->
   <link rel="stylesheet" type="text/css" href="mySiteStyles.css" />
-  <script type="text/javascript" src=""></script>
+
+  <!-- JavaScript that will be execute on site load -->
+  <script type="text/javascript">
+    // Function will assign a value to x if x equal to the array length.
+    // if the array length is equal to x then x = 0; if it is not it is equal
+    // to x + 1. This then assigns the new image on the website to the index
+    // that is equal to the value of x. Example: x = 0 so image will be the
+    // image thats in the first index of the array.
+    function bannerImage() {
+      x = (x === imagesArray.length - 1) ? 0 : x + 1;
+      document.getElementById("img").src = imagesArray[x];
+    }
+
+    // This funtion will start the switching of images every 3 seconds.
+    function startSwitcher() {
+      setInterval(bannerImage, 3000);
+    }
+
+    // Make an array to store images.
+    var imagesArray = [],
+      x = -1;
+
+    // Assign images to indexes 0 thru 2.
+    imagesArray[0] = "WearbleNowCornicopia.jpg";
+    imagesArray[1] = "WearableNowCornicopia2.jpg";
+    imagesArray[2] = "WearableNowCornicopia3.jpg";
+    imagesArray[3] = "WearableNowCornicopia4.jpg";
+  </script>
 </head>
 
-<body>
+<!-- When site loads it calls the image switching function startSwitcher() -->
+
+<body onload="startSwitcher()">
   <div id="main">
     <div id="showCaseHeader">
       <div id="companyBanner">
         <div id="companyLogo">
+
+          <!-- Make a large company logo and style it. -->
           <font size="6" style="text-align:center; color:white; text-shadow: 2px 2px #FF9933;">Wearable-Now</font>
           <h1>...Bringing tomorrows innovation to today.</h1>
         </div>
-        <!--close welcome-->
 
+        <!-- Menu Items and links to other pages on site -->
         <div id="actionbar">
           <ul id="actionItem">
-            <li><a href="index.html" style="color:red">CSIS 1430</a></li>
-            <li><a href="aboutUs.html" style="color:red">About Us</a></li>
-            <li><a href="projectExamples.html" style="color:red">Projects</a></li>
+            <li>
+              <a href="index.html" style="color:red">
+                <h1 style="color:yellow">CSIS 1430
+                  <h1/>
+              </a>
+            </li>
+            <li>
+              <a href="aboutUs.html" style="color:red">
+                <h1 style="color:yellow">About
+                  <h1/>
+              </a>
+            </li>
+            <li>
+              <a href="projectExamples.html" style="color:red">
+                <h1 style="color:yellow">Projects
+                  <h1/>
+              </a>
+            </li>
           </ul>
         </div>
         <!-- Close the CompanyLogo-->
@@ -32,19 +80,18 @@
 
     <div id="site_content">
 
+      <!-- This is the image that will rotate on site loading every 3 seconds -->
       <div class="centerTopLogoPicture">
         <ul class="centerTopLogoPicture">
           <li>
-            <img width="770" height="350" src="WearbleNowCornicopia.jpg" alt="Picture of Wearable Technology" />
+            <img id="img" width="770" height="350" src="WearbleNowCornicopia.jpg" alt="Picture of Wearable Technology" />
           </li>
         </ul>
       </div>
 
-
-      <!--close content_item-->
     </div>
-    <!--close content-->
 
+    <!-- These will be boxes that attract user attention and link them to various choices -->
     <div class="showCaseButtonsContainer">
 
       <div class="insideChooserShowCase">
@@ -53,10 +100,7 @@
         <div class="more">
           <a href="projectExamples.html" target="_blank">More...</a>
         </div>
-        <!--close more-->
       </div>
-      <!--close ourwork-->
-
 
       <div class="insideChooserShowCase">
         <h3>Back a Project</h3>
@@ -64,9 +108,7 @@
         <div class="more">
           <a href="funding.html" target="_blank">More...</a>
         </div>
-        <!--close more-->
       </div>
-      <!--close testimonials-->
 
       <div class="insideChooserShowCase">
         <h3>Start a Project</h3>
@@ -74,26 +116,21 @@
         <div class="more">
           <a href="startAProject.html" target="_blank">More...</a>
         </div>
-        <!--close more-->
       </div>
-      <!--close projects-->
 
     </div>
-    <!--close container-->
-
-
-
-
+    <!-- Footer for the site -->
     <div id="showCaseFooter">
       <p>
         <h5 style="text-align:center">Jason Green || Hummingdroidtechnologies.com || Hummingdroidtechnologies is a tradmarked LLC || 2015</h5>
       </p>
       <div id="footer">
-   </div>
-      <!--close footer-->
+      </div>
 
+      <!-- Play music in the background of home page using hidden video -->
     </div>
-    <!--close footer_container-->
+    <iframe width="0" height="0" src="http://www.youtube.com/embed/fFosNs9WXlQ?autoplay=1">
+    </iframe>
 
 </body>
 

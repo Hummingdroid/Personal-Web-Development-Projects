@@ -3,8 +3,8 @@
 
 <head>
   <title>Top Projects</title>
+  <!-- Link to site CSS sheet -->
   <link rel="stylesheet" type="text/css" href="mySiteStyles.css" />
-  <script type="text/javascript" src=""></script>
 </head>
 
 <body>
@@ -12,57 +12,80 @@
     <div id="header">
       <div id="companyBanner">
         <div id="companyLogo">
-          <h1 style="text-align:center">Top Projects</h1>
+          <!-- Page header -->
+          <!-- Using font instead of h1 for bigger text on page -->
+          <font size="6" style="color:white; text-shadow: 2px 2px #FF9933;">Wearable-Now</font>
 
         </div>
-        <!--close welcome-->
+
+
+        <!-- Menu bar links to other parts of the site -->
         <div id="actionbar">
           <ul id="actionItem">
-            <li><a href="showCaseSite.html" style="color:red">Home</a></li>
-            <li><a href="aboutUs.html" style="color:red">About Us</a></li>
-            <li><a href="funding.html" style="color:red">Fund a Project</a></li>
+            <li>
+              <a href="showCaseSite.html" style="color:red">
+                <h1 style="color:yellow">Home
+                  <h1/>
+              </a>
+            </li>
+            <li>
+              <a href="aboutUs.html" style="color:red">
+                <h1 style="color:yellow">About
+                  <h1/>
+              </a>
+            </li>
+            <li>
+              <a href="funding.html" style="color:red">
+                <h1 style="color:yellow">Fund a Project
+                  <h1/>
+              </a>
+            </li>
           </ul>
         </div>
-        <!-- Close the CompanyLogo-->
-      </div>
-      <!--Close thte companyBanner-->
-    </div>
-    <!--Close the Header -->
 
-    <div id="site_content">
-
-      <div class="centerTopLogoPicture">
-        <ul class="centerTopLogoPicture">
-          <li class="show">
-            <iframe width="600" height="315" src="http://www.youtube.com/embed/tvuYxLecQDk?autoplay=0">
-            </iframe> />
-          </li>
-        </ul>
-      </div>
-
-      <div class="centerTopLogoPicture">
-        <ul class="centerTopLogoPicture">
-          <li class="show">
-            <iframe width="600" height="315" src="http://www.youtube.com/embed/9J7GpVQCfms?autoplay=0">
-            </iframe> />
-          </li>
-        </ul>
-      </div>
-
-      <div class="centerTopLogoPicture">
-        <ul class="centerTopLogoPicture">
-          <li class="show">
-            <iframe width="600" height="315" src="http://www.youtube.com/embed/5o5XBr9rQT0?autoplay=0">
-            </iframe> />
-          </li>
-        </ul>
       </div>
 
     </div>
-    <!--close container-->
+    <div>
 
-  </div>
-  <!--close site_content-->
+
+      <!-- Youtube video links to projects  using iframe and disbaled auto play-->
+      <div id="site_content">
+
+        <div class="centerTopLogoPicture">
+          <h1 style="border:2px solid yellow; color:yellow; width:100px;">Top Projects</h1>
+          <ul class="centerTopLogoPicture">
+            <h1 style="color:black; background-color:#FFFFCC; width:100px; text-align:center; border-radius: 10px 10px 10px 10px;">Violet</h1>
+            <li class="show">
+              <iframe width="600" height="315" style="border-radius: 10px 10px 10px 10px; border:2px solid grey;" src="http://www.youtube.com/embed/tvuYxLecQDk?autoplay=0">
+              </iframe> />
+            </li>
+          </ul>
+        </div>
+
+        <div class="centerTopLogoPicture">
+          <ul class="centerTopLogoPicture">
+            <h1 style="color:black; background-color:#FFFFCC; width:100px; text-align:center; border-radius: 10px 10px 10px 10px;">Cicret</h1>
+            <li class="show">
+              <iframe width="600" height="315" style="border-radius: 10px 10px 10px 10px;" src="http://www.youtube.com/embed/9J7GpVQCfms?autoplay=0">
+              </iframe> />
+            </li>
+          </ul>
+        </div>
+
+        <div class="centerTopLogoPicture">
+          <ul class="centerTopLogoPicture">
+            <h1 style="color:black; background-color:#FFFFCC; width:100px; text-align:center; border-radius: 10px 10px 10px 10px;">Smart Ring</h1>
+            <li class="show">
+              <iframe width="600" height="315"style="border-radius: 10px 10px 10px 10px; border:2px solid grey;" src="http://www.youtube.com/embed/5o5XBr9rQT0?autoplay=0">
+              </iframe> />
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+    </div>
 
 </body>
 

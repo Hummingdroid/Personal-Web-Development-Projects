@@ -1,23 +1,34 @@
+/* html will take up whole page */
+
 html {
   height: 100%;
 }
+
+/* Assign font, user RGB style color coding, set width and give background an image. */
+
 body {
   font: normal 70% sans-serif;
   color: #FFF;
-  max-width: 720px;
+  max-width: 100%;
   background: transparent url(IndexBackground.jpeg) repeat;
 }
+
+/* Assign background image and put it in a box with curved corners */
+
 ul img {
   border-radius: 30px 30px 30px 30px;
   margin-right: 20px;
 }
+
+/* Pad paragraphs */
+
 p {
   padding: 0 0 10px 0;
   font-size: 100%;
 }
-img {
-  border: 0;
-}
+
+/* Assign mulitple 'h' tags the same attributes */
+
 h1, h2, h3, h4, h5, h6 {
   font: normal 175% sans-serif;
   color: #FFFFFF;
@@ -25,45 +36,40 @@ h1, h2, h3, h4, h5, h6 {
   text-shadow: 0px -1px 0px #000000;
   margin: 0 0 10px 0;
 }
-h2 {
-  font: normal 140% sans-serif;
-}
-h3 {
-  font: bold 130% sans-serif;
-  text-shadow: 2px 2px white;
-  color: #FFFFFF;
-}
-h4, h5, h6 {
-  margin: 0;
-  padding: 0 0 0px 0;
-  font: normal 150% sans-serif;
-  color: #FFFFFF;
-  line-height: 1.5em;
-}
-h5, h6 {
-  font: sans-serif;
-  color: #FFFFCC;
-  padding-bottom: 15px;
-}
+
+/* Chose what happens on hover for links */
+
 a:hover {
   text-decoration: underline;
   color: blue;
 }
+
+/* Unordered list attributes */
+
 ul {
   margin: 2px 0 22px 30px;
   line-height: 1.7em;
   font-style: normal;
   font-size: 100%;
 }
+
+/* Ordered list attributes */
+
 ol {
   margin: 8px 0 22px 20px;
 }
 ol li {
   margin: 0 0 11px 0;
 }
+
+/* Unordered list for id assigned */
+
 ul#actionItem {
   margin: 0;
 }
+
+/* Unoreded list for id assigned to list item */
+
 ul#actionItem li {
   padding: 0 0 0 0px;
   list-style: none;
@@ -71,6 +77,9 @@ ul#actionItem li {
   display: inline;
   background: transparent;
 }
+
+/* Unordred list item anchor */
+
 ul#actionItem li a {
   float: left;
   font: bold 120% sans-serif;
@@ -86,44 +95,71 @@ ul#actionItem li a {
   color: #FFF;
   text-decoration: none;
 }
-ul#actionItem li:hover a {
+
+/* Unordered list item on hover for anchor */
+
+ul#actionItem li:hover h1 {
   color: blue;
-  text-shadow: none;
+  text-shadow: 2px 2px #FF0000;
 }
+
+/* class with attribute settings */
+
 .content_item {
   width: 900px;
   margin-bottom: 10px;
 }
+
+/* class with attribute settings */
+
 .indexContainer {
   float: left;
   width: 350px;
   border: 20px;
   clear: both;
 }
+
+/* class with attribute settings */
+
 .sidebar_container {
   float: right;
   margin: 20px 0 0 10px;
   width: 240px;
 }
+
+/* class with attribute settings */
+
 .sidebar {
   float: left;
   width: 240px;
   margin-bottom: 10px;
 }
+
+/* class with attribute settings */
+
 .sidebar_item {
   font: normal 100% Arial, Helvetica, sans-serif;
   width: 240px;
 }
+
+/* class with attribute settings for h2 tags */
+
 .sidebar h2 {
   padding: 5px 0 0 0;
   font: normal 140% 'News Cycle', Arial, sans-serif;
   height: 30px;
 }
+
+/* class with attribute settings */
+
 .showCaseButtonsContainer {
   float: left;
   width: 940px;
   clear: both;
 }
+
+/* class with attribute settings */
+
 .insideChooser {
   width: 242px;
   float: left;
@@ -136,10 +172,19 @@ ul#actionItem li:hover a {
   -moz-border-radius: 7px 7px 7px 7px;
   -webkit-border: 7px 7px 7px 7px;
 }
+
+/* class with attribute settings for h3 tags */
+
 .insideChooser h3 {
   color: #000;
   text-shadow: 1px 1px #FEFFCF;
 }
+
+/* class with attribute settings */
+
+
+/* give it a rounded border of clear */
+
 .insideChooserShowCase {
   width: 242px;
   padding: 20px;
@@ -151,72 +196,42 @@ ul#actionItem li:hover a {
   -moz-border-radius: 7px 7px 7px 7px;
   -webkit-border: 7px 7px 7px 7px;
 }
+
+/* class with attribute settings for h3 tags */
+
 .insideChooserShowCase h3 {
   color: Black;
   text-shadow: 1px 1px #FEFFCF;
 }
+
+/* Make a glowing ring around videos */
+
+.show iframe:hover {
+  box-shadow: 20px 10px 10px red;
+}
+
+/* class with attribute settings */
+
 .content_container {
   width: 440px;
   margin-right: 10px;
   float: left;
 }
+
+/* class with attribute settings */
+
 .centerTopLogoPicture {
   width: 900px;
   height: 350px;
   float: left;
-  margin-bottom: 40px;
+  margin-bottom: 50px;
   margin-left: 50px;
   margin-right: 50px;
+  margin-top: 50px;
 }
-.sidebar_container {
-  float: right;
-  margin: 20px 0 0 10px;
-  width: 240px;
-}
-.sidebar {
-  float: left;
-  width: 240px;
-  margin-bottom: 10px;
-}
-.sidebar_item {
-  font: normal 100% Arial, Helvetica, sans-serif;
-  width: 240px;
-}
-.sidebar h2 {
-  padding: 5px 0 0 0;
-  font: normal 140% 'News Cycle', Arial, sans-serif;
-  height: 30px;
-}
-.form_settings {
-  margin: 15px 0 0 0;
-}
-.form_settings p {
-  padding: 0 0 4px 0;
-}
-.form_settings span {
-  float: left;
-  width: 280px;
-  text-align: left;
-  text-shadow: none;
-  color: #000;
-}
-.form_settings input, .form_settings textarea {
-  padding: 2px;
-  width: 299px;
-  font: 100% arial;
-  border: 1px solid #E5E5DB;
-  background: #FFF;
-  color: #47433F;
-}
-.form_settings input[type="checkbox"] {
-  padding: 2px 0;
-  width: 15px;
-  font: 100% arial;
-  border: 0;
-  background: #FFF;
-  color: #47433F;
-  margin: 28px 0;
-}
+
+/* class attribute for unordered list */
+
 ul.centerTopLogoPicture {
   width: 100%;
   height: 350px;
@@ -225,6 +240,9 @@ ul.centerTopLogoPicture {
   border-radius: 10px;
   margin: 10px 10px 10px 10px;
 }
+
+/* unordered list list item for class */
+
 ul.centerTopLogoPicture li {
   position: absolute;
   margin: 0;
@@ -232,21 +250,59 @@ ul.centerTopLogoPicture li {
   left: 0;
   right: 0;
 }
+
+/* Chain all these id with auto margins for left and right */
+
 #main, #showCaseHeader #showCaseButtonsContainer, #companyBanner, #actionBar, #site_content, #index_site_content #footer, #showCaseFooter {
   margin-left: auto;
   margin-right: auto;
 }
+
+/* ID and its attributes */
+
 #main {
   background: transparent;
 }
+
+/* ID and its attributes */
+
 #indexHeader, #showCaseHeader {
   height: 100px;
 }
+
+/* ID and its attributes  for paragraphs */
+
 #indexPageLogo p {
   text-align: center;
   color: black;
   text-shadow: 2px 2px #FFCC66;
 }
+
+/* ID and its attributes */
+
+#courseReflection {
+  border: 2px solid black;
+  display: inline-block;
+  width: 450px;
+  height: auto;
+  background-color: grey;
+  border-radius: 10px 10px 10px 10px;
+}
+
+/* ID and its attributes  for h1 tags */
+
+#courseReflection h1 {
+  color: black;
+}
+
+/* ID and its attributes */
+
+#customerInfo {
+  clear: both;
+}
+
+/* ID and its attributes */
+
 #companyBanner {
   width: 940px;
   position: relative;
@@ -256,6 +312,9 @@ ul.centerTopLogoPicture li {
   -moz-box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 10px;
   box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 10px;
 }
+
+/* ID and its attributes */
+
 #companyLogo {
   width: 355px;
   float: left;
@@ -265,21 +324,56 @@ ul.centerTopLogoPicture li {
   padding-top: 5px;
   background: transparent;
 }
+
+/* ID and its attributes */
+
+#articleone {
+  margin-left: 200px;
+  margin-top: 50px;
+  border: 2px solid black;
+  border-radius: 10px 10px 10px 10px;
+  width: 510px;
+  height: auto;
+  background-color: grey;
+}
+
+/* ID and its attributes */
+
+#thanks {
+  font: normal 70% sans-serif;
+  color: #FFF;
+  background-size: cover;
+  background: linear-gradient(white, black);
+  /* Standard syntax */
+  height: 100%;
+}
+
+/* ID and its attributes */
+
 #welcome H1 {
   font: normal 350% Comic;
   letter-spacing: -3px;
   text-shadow: 5px 5px #000000;
   color: #FEFFCF;
 }
+
+/* ID and its attributes */
+
 #menu_container {
   height: 50px;
 }
+
+/* ID and its attributes */
+
 #actionBar {
   width: 560px;
   height: 70px;
   float: left;
   margin: 0 auto;
 }
+
+/* ID and its attributes */
+
 #fundIt {
   background-color: #000;
   border: 1px solid black;
@@ -287,23 +381,35 @@ ul.centerTopLogoPicture li {
   margin-top: 10px;
   width: 100px;
 }
+
+/* ID and its attributes */
+
 #fundItagreements {
   border: 2px solid yellow;
   opacity: 0.9;
   margin-top: 10px;
-  margin-left: 400px;
+  margin-left: 250px;
   width: 300px;
 }
+
+/* ID and its attributes for h2 tags */
+
 #fundItagreements h2 {
   color: yellow;
 }
+
+/* ID and its attributes */
+
 #fundingBackground {
   font: normal 70% sans-serif;
   color: #FFF;
-  max-width: 980px;
+  max-width: 100%;
   background: transparent url(fundingBackground.jpg);
   background-size: cover;
 }
+
+/* ID and its attributes */
+
 #main {
   width: 920px;
   overflow: hidden;
@@ -311,6 +417,9 @@ ul.centerTopLogoPicture li {
   padding-bottom: 20px;
   background: transparent;
 }
+
+/* ID and its attributes */
+
 #indexBackground {
   font: normal 70% sans-serif;
   color: #FFF;
@@ -318,15 +427,24 @@ ul.centerTopLogoPicture li {
   background: transparent url(oldComputer.jpg);
   background-size: cover;
 }
+
+/* ID and its attributes */
+
 #content {
   width: 900px;
   float: left;
 }
+
+/* ID and its attributes */
+
 #companyLogo h1 {
   color: yellow;
   text-shadow: 2px 0px orange;
   padding: 10px;
 }
+
+/* ID and its attributes */
+
 #showCaseFooter {
   height: 60px;
   margin-top: 30px;
@@ -338,19 +456,24 @@ ul.centerTopLogoPicture li {
   background: -webkit-linear-gradient(black, grey);
   clear: both;
 }
+
+/* ID and its attributes */
+
 #showCaseFooter h1 {
   padding-bottom: 20px;
   margin-bottom: 10px;
 }
 
-/* ID that sets fields */
+/* ID that sets fields for h4 tags */
 
-#article {}
 #articleone h4 {
   color: orange;
   width: 500px;
   text-shadow: 0px 1px white;
 }
+
+/* ID and its attributes */
+
 #footer {
   width: 940px;
   height: 20px;
@@ -361,12 +484,13 @@ ul.centerTopLogoPicture li {
   text-shadow: 1px 1px #000;
   color: #FFF;
 }
+
+/* Set Id anchors and anchor hovers */
+
 #footer a, #footer a:hover {
   text-shadow: 1px 1px #000;
   color: #FFF;
   text-decoration: underline;
   padding-bottom: 20px;
-}
-#footer a:hover {
   text-decoration: none;
 }

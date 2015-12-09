@@ -2,84 +2,71 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
 
 <head>
-  <title>Wearable-Now</title>
-  <link rel="stylesheet" type="text/css" href="css/MySiteStyles.css" />
-  <script type="text/javascript" src=""></script>
+  <title>Thank you!</title>
+  <!-- Link to site CSS sheet -->
+  <link rel="stylesheet" type="text/css" href="mySiteStyles.css" />
+
+  <!-- JavaScript that will run on the site. It uses a start function to start -->
+  <!-- the generation of random numbers that will for a confirmation number -->
+  <!-- of the transaction for donations -->
+  <script>
+    // This function will generate the random number with alpha letters for a confirmaiton number
+    function myFunction() {
+      document.getElementById("coding").innerHTML = Math.floor((Math.random() * 1000) + 1) + "XABV" + Math.floor((Math.random() * 100) + 1) + "JPMA";
+    }
+
+    // This function gets called by the onload atribute in <body>
+    function generate() {
+      myFunction();
+    }
+  </script>
 </head>
 
-<body>
+<!-- When site loads body tag it calls a function in javaScript to generate a random alpha -->
+<!-- Numeric confirmation number -->
+
+<body onload="generate()" id="thanks">
   <div id="main">
     <div id="header">
-	  <div id="companyBanner">
-	    <div id="companyLogo">
-	      <h1>Wearable-Now</h1>
-        <h5>...Bringing tomorrows innovation to today.</h5>
-	    </div><!--close welcome-->
-	    <div id="actionbar">
+      <div id="companyBanner">
+        <div id="companyLogo">
+          <h1>Wearable-Now</h1>
+        </div>
+
+        <div id="actionbar">
           <ul id="actionItem">
-            <li class="current"><a href="index.html">Home</a></li>
-            <li><a href="ourwork.html">Our Work</a></li>
-            <li><a href="testimonials.html">Testimonials</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
+            <li>
+              <a href="showCaseSite.html">
+                <h1 style="color:blue;">Home
+                  <h1/>
+              </a>
+            </li>
           </ul>
-        </div><!-- Close the CompanyLogo-->
-	  </div><!--Close thte companyBanner-->
-  </div><!--Close the Header -->
-
-	<div id="site_content">
-
-      <div class="centerTopLogoPicture">
-		<ul class="centerTopLogoPicture">
-          <li class="show">
-            <img width="900" height="350" src="images/WearbleNowCornicopia.jpg" alt="Picture of Wearable Technology" />
-          </li>
-        </ul>
+        </div>
       </div>
+    </div>
 
-	  <div id="content">
-        <div class="content_item">
-		  <h1>What do you want to do today?</h1>
-          <p>Some description I will put here and some other things.</p>
-		</div><!--close content_item-->
-      </div><!--close content-->
+    <!-- Using inline attributes to manipulate div to clear first div wrapper -->
+    <div style="clear:both; margin-left:200px;">
+      <font style="color:black;" size="6">THANK YOU FOR YOUR DONATION</font>
+    </div>
 
-	  <div class="container">
-	    <div class="ourwork">
-	      <h3>Back a Project</h3>
-		  <p>Want to back a project?????</p>
-		  <div class="more">
-		    <a href="#">Read more</a>
-		  </div><!--close more-->
-	    </div><!--close ourwork-->
+    <!-- Here is where the confirmation number gets assigned into a box for the user -->
+    <!-- with a colored background -->
+    <div id="receiptCode">
+      <h1 style="color:blue; margin-left:300px;">Your Comfirmation Number is below.</h1>
+      <h1 id="coding" style="color:yellow; text-align: center; margin-left: 328px; margin-bottom:300px; padding:10px; width:200px; border:2px solid black;background-color:grey; clear:both;"></h1>
+    </div>
 
-
-	    <div class="testimonials">
-        <h3>Back a Project</h3>
-      <p>Want to back a project?????</p>
-		  <div class="more">
-		    <a href="#">Read more</a>
-		  </div><!--close more-->
-	    </div><!--close testimonials-->
-
-	    <div class="projects">
-        <h3>Back a Project</h3>
-      <p>Want to back a project?????</p>
-		  <div class="more">
-		    <a href="#">Read more</a>
-		  </div><!--close more-->
-	    </div><!--close projects-->
-	  </div><!--close container-->
-
-	</div><!--close site_content-->
-
-
-
-  <div id="footer_container">
-    <div id="footer">
-	  <a href="http://validator.w3.org/check?uri=referer">Valid XHTML</a> | <a href="http://fotogrph.com/">Images</a> | Heart Internet <a href="http://www.heartinternet.co.uk/web-hosting/">web hosting</a> | website template by <a href="http://www.araynordesign.co.uk">ARaynorDesign</a>
-    </div><!--close footer-->
-  </div><!--close footer_container-->
+    <!-- Footer to remind user where they are at and who they donated too -->
+    <div id="showCaseFooter">
+      <p>
+        <h5 style="text-align:center">Jason Green || Hummingdroidtechnologies.com || Hummingdroidtechnologies is a tradmarked LLC || 2015</h5>
+      </p>
+      <div id="footer">
+      </div>
+      <!--close footer-->
 
 </body>
+
 </html>

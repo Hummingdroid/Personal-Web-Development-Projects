@@ -3,48 +3,70 @@
 
 <head>
   <title>Funding</title>
+  <!-- Link to CSS sheet for website. -->
   <link rel="stylesheet" type="text/css" href="mySiteStyles.css" />
-  <script type="text/javascript" src=""></script>
+
 </head>
 
 <body id="fundingBackground">
+
+  <!-- Using nested divs to be able to place divs on page in specific locations -->
   <div id="main">
     <div id="header">
       <div id="companyBanner">
         <div id="companyLogo">
+
+          <!-- Using font instead of h1 for bigger text on page -->
           <font size="6" style="text-align:center; font-family:Tahoma">Funding</font>
 
         </div>
-        <!--close welcome-->
+
+        <!-- Links to other html files on site -->
         <div id="actionbar">
           <ul id="actionItem">
-            <li><a href="showCaseSite.html" style="color:red">Home</a></li>
-            <li><a href="aboutUs.html" style="color:red">About Us</a></li>
-            <li><a href="projectExamples.html" style="color:red">Projects</a></li>
+            <li>
+              <a href="showCaseSite.html" style="color:red">
+                <h1 style="color:yellow">Home
+                  <h1/>
+              </a>
+            </li>
+            <li>
+              <a href="aboutUs.html" style="color:red">
+                <h1 style="color:yellow">About
+                  <h1/>
+              </a>
+            </li>
+            <li>
+              <a href="projectExamples.html" style="color:red">
+                <h1 style="color:yellow">Projects
+                  <h1/>
+              </a>
+            </li>
           </ul>
         </div>
-        <!-- Close the CompanyLogo-->
+
       </div>
-      <!--Close thte companyBanner-->
+
     </div>
-    <!--Close the Header -->
+
 
     <div id="site_content">
 
       <div class="centerTopLogoPicture">
         <ul class="centerTopLogoPicture">
+          <!-- Using a picture -->
           <li class="show">
             <img width="750" height="350" margin-left="300px" src="fundingImage.jpg" alt="Picture of Wearable Technology" />
           </li>
         </ul>
       </div>
 
-      <div>
-        <!-- Header for user input area -->
-        <h1 style="font-family: Tahoma">Customer Information</h1>
+      <div id="customerInfo">
         <h6>(Forms Auto-Fill)</h6>
 
         <!-- Form that auto populates with saved form info if you have it stored on your browser -->
+        <!-- all auto fill areas are using a 'hint' aka placeholder attribute -->
+        <!-- This will clear when they start typing or choose to autofill using tab -->
         <form>
           <h2 id="fundIt" style="font-family: Tahoma; color:yellow"> First Name</h2>
           <input type="first-name" name="firstname" placeholder="First Name">
@@ -67,17 +89,21 @@
           <h2 id="fundIt" style="font-family: Tahoma; color:yellow">Email</h2>
           <input type="email" name="email" placeholder="your email@something.com">
 
-          <h2 id="fundIt" style="font-family: Tahoma; color:yellow">Email</h2>
+          <h2 id="fundIt" style="font-family: Tahoma; color:yellow">Project</h2>
           <input name="projectChoice" placeholder="Cicret Bracelet">
 
           <h2 id="fundIt" style="font-family: Tahoma; color:yellow">Amount to Fund:</h2>
+          <!-- give the field a default value -->
           <input value="0.00" name="amount">
 
+          <!-- When user presses submit it will take them to the receipt page that -->
+          <!-- will generate a random alpha numeric confirmation code for transaction -->
           <input type="button" onclick="location.href='receipt.html';" value="Submit" />
         </form>
 
       </div>
 
+      <!-- Check boxes to simulate agreement boxes on a site. -->
       <div id="fundItagreements">
         <form>
           <input type="checkbox" name="agreement">
@@ -90,7 +116,6 @@
       </div>
 
     </div>
-    <!--close site_content-->
 
 </body>
 
